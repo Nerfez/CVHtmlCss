@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil du site de Clément Olivier</title>
+</head>
+
+<body>
+    <header>
+        <h1>Page de CV</h1>
+        <!-- La valeur du alt me semble nécessaire ici car je ne fais pas mention de Diginamic dans le contexte -->
+        <img src="img/logoDiginamic.png" alt="Logo de Diginamic">
+    </header>
+    <nav>
+        <a href="Accueil.html#Formation">Formation</a>
+        <a href="Accueil.html#Compétences">Compétences</a>
+        <a href="Accueil.html#Expérience">Expérience</a>
+    </nav>
+    <section>
+        <a name="Formation">Formation</a>
+        <article>
+            <p>Baccalauréat Scientifique - Spécialité <strong>SVT</strong></p>
+            <p>Titulaire d'un baccalauréat Scientifique passé au Lycée Edouard Herriot à Troyes.</p>
+        </article>
+        <article>
+            <p>BTS SN - Spécialité <strong>IR</strong> Systèmes Numériques Informatique et Réseaux</p>
+            <p>Titulaire d'un BTS SNIR passé au Lycée Les Lombards à Troyes.</p>
+        </article>
+    </section>
+
+    <section>
+        <a name="Compétences">Compétences</a>
+        <article>
+            <p>Langages <strong>Front</strong></p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </article>
+        <article>
+            <p>Langages <strong>Back</strong></p>
+            <ul>
+                <li>Java</li>
+                <li>PHP</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <a name="Expérience">Expérience</a>
+        <article>
+            <p>PROJETS - DIGINAMIC - CONCEPTEUR DÉVELOPPEUR D'APPLICATIONS JAVA FULLSTACK</p>
+            <ul>
+                <li>Projet Individuel - Projet fullstack avec Node.JS</li>
+                <li>Projet fil rouge partie 1 - Analyse et conception de la solution</li>
+                <li>Projet fil rouge partie 2 - Mise en place du front de l'application</li>
+                <li>Projet individuel : développement d'une application JAVA avec JPA</li>
+                <li>Projet fil rouge partie 3 - Réalisation partie back</li>
+                <li>Projet fil rouge partie 4 - Finalisation de l'application Fil Rouge : intégration, tests
+                    d'intégration, recette interne et déploiement</li>
+            </ul>
+        </article>
+        <article>
+            <p>DÉVELOPPEUR WEB - PROJET BTS SNIR</p>
+            <ul>
+                <li>Concevoir et développer un site web</li>
+                <li>Concevoir une base de donnée</li>
+                <li>Envoyer des notifications d'une Raspberry Pi à des smartphones</li>
+                <li>Environnement : Javascript, PHP, SQL, CSS, Python...</li>
+            </ul>
+        </article>
+    </section>
+
+    <h1>Formulaire</h1>
+    <form action="php/message.php" method="POST" class="form-example">
+        <div class="form-example">
+            <label for="email">Votre adresse e-mail: </label>
+            <input type="email" name="email" id="email" required="required">
+        </div>
+        <div class="form-example">
+            <label for="text">Message à envoyer: </label>
+            <!-- L'énoncé ne stipule pas que le message est requis mais je pense qu'il devrait l'être -->
+            <input type="text" name="message" id="message" required="required">
+        </div>
+        <div class="form-example">
+            <input type="submit" value="Envoyer">
+        </div>
+    </form>
+    <footer>
+        <p>© 2023 Site de Clément Olivier</p>
+    </footer>
+</body>
+
+</html>
